@@ -1,6 +1,12 @@
 # Andy 的 Claude Code 核心操作指令
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/andy-claude-directives?style=social)](https://github.com/AIPMAndy/andy-claude-directives/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
 一套综合的 Claude Code 行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。
+
+**[English](./README.md) | [中文](./README_CN.md)**
 
 ## 这是什么
 
@@ -128,6 +134,38 @@ Claude："我会添加邮箱/密码验证。计划：
 2. 分享什么有效、什么无效
 3. 用清晰的推理提出补充
 
+## 快速开始
+
+```bash
+# 1. 复制 CLAUDE.md 到你的项目
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/CLAUDE.md
+
+# 2. 或使用特定模板
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/TEMPLATES.md
+# 然后从文件中选择一个模板
+
+# 3. 为你的项目定制
+# 编辑 CLAUDE.md，添加你的技术栈和项目规则
+```
+
+## 文档
+
+- 📖 **[模板集合](./TEMPLATES.md)** - 6 个针对不同场景的预配置模板
+- 💡 **[使用示例](./EXAMPLES.md)** - 前后对比展示真实行为变化
+- 🇨🇳 **[中文文档](./README_CN.md)** - 完整中文文档
+
+## Star 历史
+
+如果这对你有帮助，请考虑给个 star ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/andy-claude-directives&type=Date)](https://star-history.com/#AIPMAndy/andy-claude-directives&Date)
+
+## 社区
+
+- **分享成功案例**：[使用此模板](./.github/ISSUE_TEMPLATE/success_story.md)
+- **报告问题**：[Bug 报告模板](./.github/ISSUE_TEMPLATE/bug_report.md)
+- **建议改进**：[改进建议模板](./.github/ISSUE_TEMPLATE/improvement.md)
+
 ## 许可证
 
 MIT - 自由使用、修改，无需署名。
@@ -142,3 +180,11 @@ MIT - 自由使用、修改，无需署名。
 
 **与 Anthropic、OpenAI 或任何 AI 公司无关。**  
 只是一个开发者让 Claude Code 更系统可靠的尝试。
+
+## 支持项目
+
+如果你觉得有价值：
+- ⭐ 给仓库点星
+- 🐦 在 [Twitter/X](https://twitter.com/intent/tweet?text=推荐%20Andy%27s%20Core%20Operating%20Directives%20for%20Claude%20Code%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/andy-claude-directives) 分享
+- 💬 在 Issues 分享你的成功案例
+- 🤝 通过 PR 贡献改进

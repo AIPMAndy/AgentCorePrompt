@@ -1,6 +1,12 @@
 # Andy's Core Operating Directives for Claude Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/andy-claude-directives?style=social)](https://github.com/AIPMAndy/andy-claude-directives/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
 A comprehensive behavioral guideline for Claude Code that combines fundamental cognitive axioms, Musk's engineering methodology, and Karpathy's coding principles to maximize execution quality and minimize common LLM mistakes.
+
+**[English](./README.md) | [中文](./README_CN.md)**
 
 ## What This Is
 
@@ -128,6 +134,38 @@ This is a living document. If you find improvements:
 2. Share what worked and what didn't
 3. Suggest additions with clear reasoning
 
+## Quick Start
+
+```bash
+# 1. Copy CLAUDE.md to your project
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/CLAUDE.md
+
+# 2. Or use a specific template
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/TEMPLATES.md
+# Then pick a template from the file
+
+# 3. Customize for your project
+# Edit CLAUDE.md to add your tech stack and project rules
+```
+
+## Documentation
+
+- 📖 **[Templates](./TEMPLATES.md)** - 6 pre-configured templates for different use cases
+- 💡 **[Examples](./EXAMPLES.md)** - Before/after comparisons showing real behavior changes
+- 🇨🇳 **[中文文档](./README_CN.md)** - Complete Chinese documentation
+
+## Star History
+
+If this helped you, consider giving it a star ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/andy-claude-directives&type=Date)](https://star-history.com/#AIPMAndy/andy-claude-directives&Date)
+
+## Community
+
+- **Share your success story**: [Use this template](./.github/ISSUE_TEMPLATE/success_story.md)
+- **Report issues**: [Bug report template](./.github/ISSUE_TEMPLATE/bug_report.md)
+- **Suggest improvements**: [Improvement template](./.github/ISSUE_TEMPLATE/improvement.md)
+
 ## License
 
 MIT - Use freely, modify as needed, no attribution required.
@@ -142,3 +180,11 @@ MIT - Use freely, modify as needed, no attribution required.
 
 **Not affiliated with Anthropic, OpenAI, or any AI company.**  
 Just one developer's attempt to make Claude Code more systematically reliable.
+
+## Support
+
+If you find this valuable:
+- ⭐ Star the repo
+- 🐦 Share on [Twitter/X](https://twitter.com/intent/tweet?text=Check%20out%20Andy%27s%20Core%20Operating%20Directives%20for%20Claude%20Code%20-%20Combines%20cognitive%20axioms%2C%20Musk%27s%20methodology%2C%20and%20Karpathy%27s%20principles&url=https://github.com/AIPMAndy/andy-claude-directives)
+- 💬 Share your success story in Issues
+- 🤝 Contribute improvements via PR
