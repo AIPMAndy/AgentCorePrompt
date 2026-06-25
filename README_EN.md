@@ -1,4 +1,4 @@
-# 👉 [中文文档 Chinese README](./README_CN.md)
+# 👉 [中文文档 Chinese README](./README.md)
 
 ---
 
@@ -8,13 +8,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=social)](https://github.com/AIPMAndy/AndySoul/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-> **📖 [中文完整文档请点击这里 | Click here for Chinese documentation](./README_CN.md)**
+> **📖 [中文完整文档请点击这里 | Click here for Chinese documentation](./README.md)**
 
 Universal behavioral guidelines for AI coding agents (Claude Code, Codex, Cursor, etc.) that combines fundamental cognitive axioms, Musk's engineering methodology, and Karpathy's coding principles to maximize execution quality and minimize common LLM mistakes.
 
 **Works with: Claude Code, OpenAI Codex, Cursor, and any AI agent that reads project instructions.**
 
-**[中文](./README_CN.md) | [English](./README.md)**
+**[中文](./README.md) | [English](./README.md)**
 
 ## What This Is
 
@@ -94,7 +94,7 @@ The file is modular - keep what fits your workflow, remove what doesn't.
 
 - 📖 **[Templates](./TEMPLATES.md)** - 6 pre-configured templates for different use cases
 - 💡 **[Examples](./EXAMPLES.md)** - Before/after comparisons showing real behavior changes
-- 🇨🇳 **[中文文档](./README_CN.md)** - Complete Chinese documentation
+- 🇨🇳 **[中文文档](./README.md)** - Complete Chinese documentation
 
 ## What Makes This Different
 
