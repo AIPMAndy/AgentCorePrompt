@@ -1,23 +1,31 @@
-# Andy 的 Claude Code 核心操作指令
+# AgentCorePrompt - AI Agent 核心操作指令
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/andy-claude-directives?style=social)](https://github.com/AIPMAndy/andy-claude-directives/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/AgentCorePrompt?style=social)](https://github.com/AIPMAndy/AgentCorePrompt/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-一套综合的 Claude Code 行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。
+适用于 AI 编码 Agent（Claude Code、Codex、Cursor 等）的通用行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。
+
+**适用于：Claude Code、OpenAI Codex、Cursor 以及任何读取项目指令的 AI Agent。**
 
 **[中文](./README_CN.md) | [English](./README.md)**
 
 ## 这是什么
 
-这是一个 **CLAUDE.md** 配置文件，旨在让 Claude Code：
+一套**通用配置文件**，让 AI 编码 Agent：
 - 从第一性原理思考，而非表面类比
 - 在实现前质疑需求
 - 编写最小化、外科手术式的代码变更
 - 系统性验证结果
 - 透明地处理不确定性
 
-它建立在三大支柱之上：
+**兼容平台：**
+- 🤖 **Claude Code**（通过 `CLAUDE.md`）
+- 🔧 **OpenAI Codex**（通过 `.cursorrules` 或系统提示词）
+- ⚡ **Cursor**（通过 `.cursorrules`）
+- 🎯 **任何 AI Agent**（任何读取项目指令的 Agent）
+
+建立在三大支柱之上：
 1. **9 条认知公理**（熵增定律、还原论、概率不确定性等）
 2. **马斯克 5 步工程法**（质疑 → 删除 → 简化 → 加速 → 自动化）
 3. **Karpathy 4 大编码原则**（思考先于编码、简洁优先、外科手术式修改、目标驱动执行）
@@ -25,7 +33,7 @@
 ## 适用人群
 
 **适合你使用，如果你：**
-- 希望 Claude 更系统地思考，减少错误
+- 希望 AI Agent 更系统地思考，减少错误
 - 需要透明的推理和明确的不确定性处理
 - 重视最小化、精准的代码变更，而非"改进"
 - 需要目标驱动的执行和可验证的检查点
@@ -36,29 +44,55 @@
 - 应用框架
 - 领域特定指令的替代品
 
+## 快速开始
+
+```bash
+# Claude Code 用户
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/AgentCorePrompt/main/CLAUDE.md
+
+# Cursor / Codex 用户
+curl -o .cursorrules https://raw.githubusercontent.com/AIPMAndy/AgentCorePrompt/main/CLAUDE.md
+
+# 或浏览特定场景模板
+curl -O https://raw.githubusercontent.com/AIPMAndy/AgentCorePrompt/main/TEMPLATES.md
+```
+
 ## 如何使用
 
-### 方式 1：直接使用
-复制 [`CLAUDE.md`](./CLAUDE.md) 到你的项目根目录。Claude Code 会自动加载它。
+### Claude Code
+复制 `CLAUDE.md` 到项目根目录：
+```bash
+curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/AgentCorePrompt/main/CLAUDE.md
+```
+Claude Code 会自动加载。
 
-### 方式 2：与现有 CLAUDE.md 合并
-如果你已经有 `CLAUDE.md`，添加相关部分：
-- 复制"核心操作指令"部分到顶部作为高层指导
-- 如果需要系统性推理，合并"认知公理"
-- 如果项目需要简化纪律，合并"马斯克 5 步法"
-- 为了更好的代码质量，合并"Karpathy 原则"
+### Cursor / Codex
+复制为 `.cursorrules`：
+```bash
+curl -o .cursorrules https://raw.githubusercontent.com/AIPMAndy/AgentCorePrompt/main/CLAUDE.md
+```
 
-### 方式 3：定制化
-文件是模块化的。保留适合你工作流的部分：
-- **认知公理**：用于复杂决策和系统设计
-- **5 步法**：避免过度工程
-- **Karpathy 原则**：代码质量和可维护性
-- **数据完整性**：严格准确性要求的项目
-- **安全防护**：生产系统
+### 其他 AI Agent
+复制内容并适配到你的 Agent 配置格式（系统提示词、指令文件等）。
+
+### 定制化
+编辑文件，添加你的：
+- 技术栈和锁定依赖
+- 项目特定规则和约定
+- 团队工作流和 git 实践
+- 领域知识和边界情况
+
+文件是模块化的 - 保留适合你工作流的部分，移除不需要的。
+
+## 文档
+
+- 📖 **[模板集合](./TEMPLATES.md)** - 6 个针对不同场景的预配置模板
+- 💡 **[使用示例](./EXAMPLES.md)** - 前后对比展示真实行为变化
+- 🇨🇳 **[中文文档](./README_CN.md)** - 完整中文文档
 
 ## 与众不同之处
 
-大多数 CLAUDE.md 文件关注"如何编码"。这个关注**"如何思考"** 然后再编码：
+大多数提示工程关注"如何编码"。这个关注**"如何思考"** 然后再编码：
 
 1. **认知基础**：基于普世原则（熵、进化、涌现）而非编码惯例
 2. **质疑优先文化**：系统性挑战需求（马斯克方法）
@@ -95,13 +129,13 @@
 **之前**（典型 LLM 行为）：
 ```
 用户："给登录表单添加验证"
-Claude：[添加验证 + 重构表单组件 + 更新样式 + 添加未使用的错误状态]
+AI：[添加验证 + 重构表单 + 更新样式 + 添加未使用的错误状态]
 ```
 
-**之后**（使用这些指令）：
+**之后**（使用 AgentCorePrompt）：
 ```
 用户："给登录表单添加验证"
-Claude："我会添加邮箱/密码验证。计划：
+AI："我会添加邮箱/密码验证。计划：
 1. 添加验证规则 → 用无效输入测试
 2. 显示错误消息 → 测试错误显示
 3. 无效时阻止提交 → 测试提交拦截
@@ -109,6 +143,8 @@ Claude："我会添加邮箱/密码验证。计划：
 我还应该处理边界情况如空字符串吗，还是只做基本格式验证？"
 [只做请求的修改，匹配现有代码风格]
 ```
+
+查看 [EXAMPLES.md](./EXAMPLES.md) 了解 5 个详细的前后对比。
 
 ## 权衡
 
@@ -119,6 +155,18 @@ Claude："我会添加邮箱/密码验证。计划：
 - 多人协作项目
 
 对于简单的拼写修复或单行修改，使用你的判断力。
+
+## Star 历史
+
+如果这对你有帮助，请考虑给个 star ⭐
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/AgentCorePrompt&type=Date)](https://star-history.com/#AIPMAndy/AgentCorePrompt&Date)
+
+## 社区
+
+- **分享成功案例**：[使用此模板](./.github/ISSUE_TEMPLATE/success_story.md)
+- **报告问题**：[Bug 报告模板](./.github/ISSUE_TEMPLATE/bug_report.md)
+- **建议改进**：[改进建议模板](./.github/ISSUE_TEMPLATE/improvement.md)
 
 ## 相关工作
 
@@ -134,38 +182,6 @@ Claude："我会添加邮箱/密码验证。计划：
 2. 分享什么有效、什么无效
 3. 用清晰的推理提出补充
 
-## 快速开始
-
-```bash
-# 1. 复制 CLAUDE.md 到你的项目
-curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/CLAUDE.md
-
-# 2. 或使用特定模板
-curl -o CLAUDE.md https://raw.githubusercontent.com/AIPMAndy/andy-claude-directives/main/TEMPLATES.md
-# 然后从文件中选择一个模板
-
-# 3. 为你的项目定制
-# 编辑 CLAUDE.md，添加你的技术栈和项目规则
-```
-
-## 文档
-
-- 📖 **[模板集合](./TEMPLATES.md)** - 6 个针对不同场景的预配置模板
-- 💡 **[使用示例](./EXAMPLES.md)** - 前后对比展示真实行为变化
-- 🇨🇳 **[中文文档](./README_CN.md)** - 完整中文文档
-
-## Star 历史
-
-如果这对你有帮助，请考虑给个 star ⭐
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/andy-claude-directives&type=Date)](https://star-history.com/#AIPMAndy/andy-claude-directives&Date)
-
-## 社区
-
-- **分享成功案例**：[使用此模板](./.github/ISSUE_TEMPLATE/success_story.md)
-- **报告问题**：[Bug 报告模板](./.github/ISSUE_TEMPLATE/bug_report.md)
-- **建议改进**：[改进建议模板](./.github/ISSUE_TEMPLATE/improvement.md)
-
 ## 许可证
 
 MIT - 自由使用、修改，无需署名。
@@ -178,13 +194,13 @@ MIT - 自由使用、修改，无需署名。
 
 ---
 
-**与 Anthropic、OpenAI 或任何 AI 公司无关。**  
-只是一个开发者让 Claude Code 更系统可靠的尝试。
+**与 Anthropic、OpenAI、Cursor 或任何 AI 公司无关。**  
+只是一个开发者让 AI 编码 Agent 更系统可靠的尝试。
 
 ## 支持项目
 
 如果你觉得有价值：
 - ⭐ 给仓库点星
-- 🐦 在 [Twitter/X](https://twitter.com/intent/tweet?text=推荐%20Andy%27s%20Core%20Operating%20Directives%20for%20Claude%20Code%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/andy-claude-directives) 分享
+- 🐦 在 [Twitter/X](https://twitter.com/intent/tweet?text=推荐%20AgentCorePrompt%20-%20适用于%20AI%20编码%20Agent（Claude、Codex、Cursor）的通用指令%20-%20结合认知公理、马斯克方法论和%20Karpathy%20原则&url=https://github.com/AIPMAndy/AgentCorePrompt) 分享
 - 💬 在 Issues 分享你的成功案例
 - 🤝 通过 PR 贡献改进
