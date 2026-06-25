@@ -6,7 +6,7 @@
 
 A comprehensive behavioral guideline for Claude Code that combines fundamental cognitive axioms, Musk's engineering methodology, and Karpathy's coding principles to maximize execution quality and minimize common LLM mistakes.
 
-**[English](./README.md) | [中文](./README_CN.md)**
+**[中文](./README_CN.md) | [English](./README.md)**
 
 ## What This Is
 

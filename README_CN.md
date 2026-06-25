@@ -6,7 +6,7 @@
 
 一套综合的 Claude Code 行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。
 
-**[English](./README.md) | [中文](./README_CN.md)**
+**[中文](./README_CN.md) | [English](./README.md)**
 
 ## 这是什么
 
