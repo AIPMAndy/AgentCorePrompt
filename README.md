@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/AndySoul?style=social)](https://github.com/AIPMAndy/AndySoul/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-适用于 AI 编码 Agent（Claude Code、Codex、Cursor 等）的通用行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。
+适用于 AI 编码 Agent（Claude Code、Codex、Cursor 等）的通用行为指南，结合了基础认知公理、马斯克的工程方法论和 Karpathy 的编码原则，旨在最大化执行质量并最小化常见的 LLM 错误。也欢迎加微信AIPMAndy一起探讨Agent技术及应用。
 
 **适用于：Claude Code、OpenAI Codex、Cursor 以及任何读取项目指令的 AI Agent。**
 
